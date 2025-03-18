@@ -4,3 +4,17 @@ let amigos = []
 
 let nombre = document.getElementById('amigo').value;
 
+console.log(nombre); 
+
+function agregarAmigo() {
+    
+    let input = document.getElementById('amigo');
+    let nombre = input.value.trim(); // Elimina espacios en blanco
+
+    
+    if (nombre === "") {
+        alert("Por favor, inserte un nombre.");
+
+        return;
+   
+    }
